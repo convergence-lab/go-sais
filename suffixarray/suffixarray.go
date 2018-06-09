@@ -159,6 +159,10 @@ func (x *Index) Write(w io.Writer) error {
 	return nil
 }
 
+func (x *Index) SA() []int {
+	return x.sa
+}
+
 // Bytes returns the data over which the index was created.
 // It must not be modified.
 //
